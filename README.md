@@ -33,8 +33,8 @@ Use these in your loops and flow control to draw amazing things!
 
 Set a single pixel on inky:bit. Note, you must call `show` to display your changes.
 
-* `x` is the x position, from 0-249
-* `y` is the y position, from 0-119
+* `x` is the x position, from 0-295
+* `y` is the y position, from 0-127
 * `color` is the color, one of `inkybit.Color.White`,  `inkybit.Color.Black`,  `inkybit.Color.Accent`
 
 ```
@@ -69,8 +69,8 @@ inkybit.show()
 To show an image on inky:bit, use `drawImage`:
 
 * `image` is the micro:bit image you want to display
-* `x` is the x position, from 0-249
-* `y` is the y position, from 0-119
+* `x` is the x position, from 0-295
+* `y` is the y position, from 0-127
 * `color` is the color, one of `inkybit.Color.White`,  `inkybit.Color.Black`,  `inkybit.Color.Accent`
 * `size` is the text size, one of `inkybit.TextSize.Tiny`, `inkybit.TextSize.Regular`, `inkybit.TextSize.Medium`, `inkybit.TextSize.Large`
 
@@ -83,8 +83,8 @@ inkybit.drawImage(image: Image, x: number, y: number, color: Color, size: TextSi
 To show a string of text on inky:bit you should use `drawText`:
 
 * `text` is the text you want to show
-* `x` is the x position, from 0-249
-* `y` is the y position, from 0-119
+* `x` is the x position, from 0-295
+* `y` is the y position, from 0-127
 * `color` is the color, one of `inkybit.Color.White`,  `inkybit.Color.Black`,  `inkybit.Color.Accent`
 * `size` is the text size, one of `inkybit.TextSize.Tiny`, `inkybit.TextSize.Regular`, `inkybit.TextSize.Medium`, `inkybit.TextSize.Large`
 

@@ -124,8 +124,8 @@ namespace inkybit {
     /**
      * Display an icon on inky:bit
      * @param icon - icon to display
-     * @param x - x position (0-249)
-     * @param y - y position (0-119)
+     * @param x - x position (0-295)
+     * @param y - y position (0-127)
      * @param color - color to set (0-2)
      */
     /*
@@ -134,8 +134,8 @@ namespace inkybit {
     // icon.fieldEditor="gridpicker"
     // icon.fieldOptions.width="400" icon.fieldOptions.columns="5"
     // icon.fieldOptions.itemColour="black" icon.fieldOptions.tooltips="true"
-    // x.min=0 x.max=249
-    // y.min=0 y.max=119
+    // x.min=0 x.max=295
+    // y.min=0 y.max=127
     */
     export function drawIcon(icon: IconNames, x: number, y: number, color: Color = Color.Black, size: TextSize = TextSize.Regular): void {
         let image: Image = images.iconImage(icon)
@@ -145,15 +145,15 @@ namespace inkybit {
     /**
      * Display an arrow on inky:bit
      * @param arrow - arrow to display
-     * @param x - x position (0-249)
-     * @param y - y position (0-119)
+     * @param x - x position (0-295)
+     * @param y - y position (0-127)
      * @param color - color to set (0-2)
      */
     /*
     // blockId=inkybit_draw_arrow
     // block="draw arrow %arrow| at x %x| y %y| with color %color| and size %size"
-    // x.min=0 x.max=249
-    // y.min=0 y.max=119
+    // x.min=0 x.max=295
+    // y.min=0 y.max=127
     */
     export function drawArrow(arrow: ArrowNames, x: number, y: number, color: Color = Color.Black, size: TextSize = TextSize.Regular): void {
         let image: Image = images.arrowImage(arrow)
@@ -163,14 +163,14 @@ namespace inkybit {
     /**
      * Draw an image on inky:bit
      * @param image - image to display
-     * @param x - x position (0-249)
-     * @param y - y position (0-119)
+     * @param x - x position (0-295)
+     * @param y - y position (0-127)
      * @param color - color to set (0-2)
      */
     //% blockId=inkybit_draw_image
     //% block="draw image %image| at x %x| y %y| with color %color| and size %size"
-    //% x.min=0 x.max=249
-    //% y.min=0 y.max=119
+    //% x.min=0 x.max=2495
+    //% y.min=0 y.max=127
     export function drawImage(image: Image, x: number, y: number, color: Color = Color.Black, size: TextSize = TextSize.Regular): void {
         let rows: number = 5 * size
         let cols: number = image.width() * size
@@ -187,14 +187,14 @@ namespace inkybit {
 
     /**
      * Set an pixel on inky:bit
-     * @param x - x position (0-249)
-     * @param y - y position (0-119)
+     * @param x - x position (0-295)
+     * @param y - y position (0-127)
      * @param color - color to set (0-2)
      */
     //% blockId=inkybit_set_pixel
     //% block="set pixel at x %x| y %y| with color %color"
-    //% x.min=0 x.max=249
-    //% y.min=0 y.max=119
+    //% x.min=0 x.max=295
+    //% y.min=0 y.max=127
     export function setPixel(x: number, y: number, color: Color = Color.Black): void {
         x *= _pixelSize
         y *= _pixelSize
@@ -211,15 +211,15 @@ namespace inkybit {
 
     /**
      * Draw a rectangle on inky:bit
-     * @param x - x position (0-249)
-     * @param y - y position (0-119)
+     * @param x - x position (0-295)
+     * @param y - y position (0-127)
      * @param color - color to set (0-2)
      * @param filled - whether to fill the rectangle with color
      */
     //% blockId=inkybit_draw_rectangle
     //% block="draw rectangle at x %x| y %y| width %width| height %height| color %color| filled %filled"
-    //% x.min=0 x.max=249
-    //% y.min=0 y.max=119
+    //% x.min=0 x.max=295
+    //% y.min=0 y.max=127
     export function drawRectangle(x: number, y: number, width: number, height: number, color: Color = Color.Black, filled: Boolean = false): void {
         let c: number = color
         let px: number = 0
@@ -249,18 +249,18 @@ namespace inkybit {
 
     /**
      * Draw a line on inky:bit
-     * @param x0 - start x position (0-249)
-     * @param y0 - start y position (0-119)
-     * @param x1 - end x position (0-249)
-     * @param y1 - end y position (0-119)
+     * @param x0 - start x position (0-295)
+     * @param y0 - start y position (0-127)
+     * @param x1 - end x position (0-295)
+     * @param y1 - end y position (0-127)
      * @param color - color to set (0-2)
      */
     //% blockId=inkybit_draw_line
     //% block="draw line from x %x0 y %y0| to x %x1 y %y1| color %color"
-    //% x0.min=0 x0.max=249
-    //% y0.min=0 y0.max=119
-    //% x1.min=0 x1.max=249
-    //% y1.min=0 y1.max=119
+    //% x0.min=0 x0.max=295
+    //% y0.min=0 y0.max=127
+    //% x1.min=0 x1.max=295
+    //% y1.min=0 y1.max=127
     export function drawLine(x0: number, y0: number, x1: number, y1: number, color: Color = Color.Black): void {
         let c: number = color
         let dx: number = Math.abs(x1 - x0)
@@ -324,8 +324,8 @@ namespace inkybit {
     /**
      * Draw a single alphanumeric character.
      * @param char - character to display
-     * @param x - x position (0-249)
-     * @param y - y position (0-119)
+     * @param x - x position (0-295)
+     * @param y - y position (0-127)
      * @param color - color to set (0-2)
      */
     export function drawChar(char: string, x: number, y: number, color: Color = Color.Black, size: TextSize = TextSize.Regular): void {
@@ -361,8 +361,8 @@ namespace inkybit {
      */
     //% blockId=inkybit_draw_text
     //% block="draw text %text| at x %x| y %y| with color %color| and size %size"
-    //% x.min=0 x.max=249
-    //% y.min=0 y.max=119
+    //% x.min=0 x.max=295
+    //% y.min=0 y.max=127
     export function drawText(text: string, x: number, y: number, color: Color = Color.Black, size: TextSize = TextSize.Regular): void {
         text = tokenize(text)
         _drawText(text, x, y, color, size)
