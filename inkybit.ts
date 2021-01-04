@@ -70,24 +70,24 @@ namespace inkybit {
     }
 
     export enum PixelSize {
-        //% block="normal (1x)" defl=True
+        //% block="normal (x1)" defl=True
         Normal = 1,
-        //% block="double (2x)"
+        //% block="double (x2)"
         Double = 2,
-        //% block="triple (3x)"
+        //% block="triple (x3)"
         Triple = 3,
-        //% block="quad (4x)"
+        //% block="quad (x4)"
         Quad = 4
     }
 
     export enum TextSize {
-        //% block="regular (2x)" defl=True
+        //% block="regular (x2)" defl=True
         Regular = 2,
-        //% block="tiny (1x)"
+        //% block="tiny (x1)"
         Tiny = 1,
-        //% block="medium (3x)"
+        //% block="medium (x3)"
         Medium = 3,
-        //% block="large (4x)"
+        //% block="large (x4)"
         Large = 4
     }
 
@@ -130,7 +130,7 @@ namespace inkybit {
      */
     /*
     // blockId=inkybit_draw_icon
-    // block="draw icon %icon| at x %x| y %y| with color %color| and size %size"
+    // block="draw A icon %icon| at x %x| y %y| with color %color| and size %size"
     // icon.fieldEditor="gridpicker"
     // icon.fieldOptions.width="400" icon.fieldOptions.columns="5"
     // icon.fieldOptions.itemColour="black" icon.fieldOptions.tooltips="true"
@@ -151,7 +151,7 @@ namespace inkybit {
      */
     /*
     // blockId=inkybit_draw_arrow
-    // block="draw arrow %arrow| at x %x| y %y| with color %color| and size %size"
+    // block="draw A arrow %arrow| at x %x| y %y| with color %color| and size %size"
     // x.min=0 x.max=295
     // y.min=0 y.max=127
     */
@@ -168,8 +168,8 @@ namespace inkybit {
      * @param color - color to set (0-2)
      */
     //% blockId=inkybit_draw_image
-    //% block="draw image %image| at x %x| y %y| with color %color| and size %size"
-    //% x.min=0 x.max=2495
+    //% block="draw A image %image| at x %x| y %y| with color %color| and size %size"
+    //% x.min=0 x.max=295
     //% y.min=0 y.max=127
     export function drawImage(image: Image, x: number, y: number, color: Color = Color.Black, size: TextSize = TextSize.Regular): void {
         let rows: number = 5 * size
@@ -210,14 +210,14 @@ namespace inkybit {
     }
 
     /**
-     * Draw a rectangle on inky:bit
+     * Draw a rect on inky:bit
      * @param x - x position (0-295)
      * @param y - y position (0-127)
      * @param color - color to set (0-2)
-     * @param filled - whether to fill the rectangle with color
+     * @param filled - whether to fill the rect with color
      */
     //% blockId=inkybit_draw_rectangle
-    //% block="draw rectangle at x %x| y %y| width %width| height %height| color %color| filled %filled"
+    //% block="draw A rect at x %x| y %y| width %width| height %height| color %color| filled %filled"
     //% x.min=0 x.max=295
     //% y.min=0 y.max=127
     export function drawRectangle(x: number, y: number, width: number, height: number, color: Color = Color.Black, filled: Boolean = false): void {
@@ -256,7 +256,7 @@ namespace inkybit {
      * @param color - color to set (0-2)
      */
     //% blockId=inkybit_draw_line
-    //% block="draw line from x %x0 y %y0| to x %x1 y %y1| color %color"
+    //% block="draw A line from x %x0 y %y0| to x %x1 y %y1| color %color"
     //% x0.min=0 x0.max=295
     //% y0.min=0 y0.max=127
     //% x1.min=0 x1.max=295
@@ -360,7 +360,7 @@ namespace inkybit {
      * @param brightness - brightness to set (0-255)
      */
     //% blockId=inkybit_draw_text
-    //% block="draw text %text| at x %x| y %y| with color %color| and size %size"
+    //% block="draw A text %text| at x %x| y %y| with color %color| and size %size"
     //% x.min=0 x.max=295
     //% y.min=0 y.max=127
     export function drawText(text: string, x: number, y: number, color: Color = Color.Black, size: TextSize = TextSize.Regular): void {
@@ -407,7 +407,7 @@ namespace inkybit {
      * update the e-ink display with your pretty pixels
      */
     //% blockId=inkybit_show
-    //% block="display your changes"
+    //% block="display the changes"
     export function show() {
         _show() 
     }
