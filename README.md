@@ -198,5 +198,5 @@ SOFTWARE.
 * for PXT/microbit
 
 ```package
-inkybit=github:pimoroni/pxt-inkybit
+inkybit=github:raster/pxt-inkybit
 ```
