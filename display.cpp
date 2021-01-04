@@ -9,7 +9,7 @@ using namespace pxt;
 #define DC uBit.io.P12   // MICROBIT_PIN_P12
 #define CS uBit.io.P8    // MICROBIT_PIN_P8
 #define RESET uBit.io.P2 // MICROBIT_PIN_P2
-#define BUSY uBit.io.P16 // MICROBIT_PIN_P16
+#define BUSY uBit.io.P11 // MICROBIT_PIN_P11
 
 #define DRIVER_CONTROL 0x01
 #define GATE_VOLTAGE 0x03

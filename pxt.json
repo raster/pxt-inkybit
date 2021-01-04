@@ -1,7 +1,7 @@
 {
     "name": "inkybit",
     "version": "0.0.1",
-    "description": "Pimoroni Inky:Bit",
+    "description": "raster Inky:Bit",
     "license": "MIT",
     "dependencies": {
         "core": "*"
