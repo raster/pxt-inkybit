@@ -1,6 +1,6 @@
 {
-  "name": "pxt-inkybit",
-  "version": "0.0.1",
+  "name": "pxt-inkybit2",
+  "version": "0.0.2",
   "dependencies": {
     "pxt": "^5.0.0"
   },
