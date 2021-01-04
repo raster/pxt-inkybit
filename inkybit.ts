@@ -1,8 +1,8 @@
 //% weight=100 color=#000000 icon="\uf043" block="Inky:Bit"
 namespace inkybit {
     
-    const WIDTH: number = 250
-    const HEIGHT: number = 122
+    const WIDTH: number = 296
+    const HEIGHT: number = 128
 
     let UPSIDE_DOWN: boolean = false
 
