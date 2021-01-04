@@ -37,4 +37,6 @@ inkybit.drawIcon(IconNames.Heart, 0, 6, inkybit.Color.Accent, inkybit.TextSize.R
 inkybit.drawIcon(IconNames.Heart, 0, 41, inkybit.Color.Accent, inkybit.TextSize.Medium)
 inkybit.drawIcon(IconNames.Heart, 41, 0, inkybit.Color.Accent, inkybit.TextSize.Large)
 
+inkybit.clear()
+
 inkybit.show()
